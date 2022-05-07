@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- my library -->
+    <title>grid_Css</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: rgb(252, 215, 147);
+            height: 500px;
+        }
+        h1 {
+            color: #000000;          
+            line-height: 260px;
+            margin: 0;
+        }
+        .course-item {
+            background-color: orange;
+            height: 260px;
+        }
+        @media (max-width: 1023px) {
+            .course-item{
+                margin-top: 16px;
+            } 
+        }
+        .category {
+            background-color: greenyellow;
+            height: 260px;
+        }
+        ul {
+            margin-top: 0;
+        }
+        .my_column {
+            background-color: orange;
+            height: 260px;
+        }
+    </style>
+</head>
+<!-- 
+    column: .col 
+    prefix class: 
+        - c - mobile
+        - m - tablet
+        - l - PC
+ -->
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <!-- <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>Java</li>
+                        <li>html css</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 2</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>course 3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- 12 chia 4 dc 3 lay L-3 -->
+
+            <!-- offset  -->
+            <div class="col l-6 l-o-3 m-8 m-o-2 c-12">
+                <div class="my_column">
+                    <h1>column 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
